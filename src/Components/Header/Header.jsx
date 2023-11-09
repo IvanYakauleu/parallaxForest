@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 
 const Header = () => {
-  const scrollRef = useRef(window.scrollY);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     function handleScroll() {
