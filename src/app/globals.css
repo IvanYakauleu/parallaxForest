@@ -1,7 +1,7 @@
 :root {
   --index: calc(1vw + 1vh);
   --text: #e7e7e0;
-  --transition: transform 0.2s;
+  --transition: transform 0.5s;
 }
 
 * {
