@@ -1,6 +1,7 @@
 :root {
   --index: calc(1vw + 1vh);
   --text: #e7e7e0;
+  --transition: transform 0.2s;
 }
 
 * {
@@ -17,6 +18,7 @@ body {
   color: #fff;
   font-family: raleway_f, sans-serif;
   line-height: 1.55;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -74,21 +76,25 @@ a {
 
 .layers__base {
   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  /* transition: var(--transition); */
   z-index: 0;
 }
 
 .layers__middle {
   transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  /* transition: var(--transition); */
 }
 
 .layers__front {
   transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+  /* transition: var(--transition); */
 }
 
 .layer__header {
   z-index: 1;
   will-change: transform;
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  /* transition: var(--transition); */
   text-transform: uppercase;
   font-weight: 900;
   color: var(--text);
@@ -125,6 +131,7 @@ a {
   letter-spacing: calc(var(--index) / 7.6);
   margin-bottom: calc(var(--index) * 0.4);
   transform: var(--main-article-transform);
+  /* transition: var(--transition); */
 }
 
 .main-article__paragraph {
@@ -132,6 +139,7 @@ a {
   font-size: calc(var(--index) * 0.9);
   max-width: calc(var(--index) * 30);
   transform: var(--main-article-transform);
+  /* transition: var(--transition); */
 }
 
 .copy {
